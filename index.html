@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonks 💹</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Stocks Singleton</h1>
+            <table id="stock-table" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Exchange</th>
+                        <th>Open</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Close</th>
+                        <th>Bid</th>
+                        <th>Ask</th>
+                        <th>Trade Date</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-table-body">
+                </tbody>
+            </table>
+            <label for="exchange">Select an Exchange group</label>
+            <select name="exchange" id="exchange" onchange="loadData()">
+            </select>
+        </div>
+    </div>
+    <script type="module" defer src="./scripts/main.js"></script>
+</body>
+
+</html>
